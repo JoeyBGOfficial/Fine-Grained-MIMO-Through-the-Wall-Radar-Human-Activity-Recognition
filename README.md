@@ -285,7 +285,7 @@ Each benchmark folder includes scripts for simulated data, measured data, datase
 1. **Environment:** The project consists of pure MATLAB code. MATLAB R2025a or later is recommended. The CPU pipeline is provided by default, and GPU versions are available for selected Riemannian feature scripts.
 2. **Algorithm design:** This work explores a fine-grained TWR recognition problem by combining multi-channel radar image fusion, Riemannian feature representation, and deep ensemble learning.
 3. **Data and rights:** Considering intellectual property and the effort of the team, this repository open-sources code and visualization results, but not the real-world raw radar data. The project is intended for learning and research reference only. Any direct use for paper submissions, patents, or commercialization must receive prior consent.
-4. **Questions:** For reproduction issues, please contact **JoeyBG@126.com**.
+4. **Questions:** For reproduction issues, feel free to contact me at **JoeyBG@126.com**.
 
 ---
 
