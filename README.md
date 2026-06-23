@@ -1,4 +1,4 @@
-![Uploading ChatGPT Image 2026年6月23日 15_09_42-realesrgan-realcugan_no_denoise.jpg…]()
+<img width="8688" height="1492" alt="ChatGPT Image 2026年6月23日 15_09_42-realesrgan-realcugan_no_denoise" src="https://github.com/user-attachments/assets/5cd014b1-94f8-4593-a3c8-b9dd44a826ff" />
 
 <h1 align="center">Fine-Grained MIMO Through-the-Wall Radar Human Activity Recognition</h1>
 
