@@ -12,13 +12,6 @@
 
 **Through-the-Wall Radar (TWR) Human Activity Recognition (HAR) represents a cutting-edge field in pattern recognition research.** By extracting micro-Doppler signature of indoor targets under conditions of penetration, low signal-to-noise ratio, low resolution, and multipath effects, this field enables precise analysis of human motion states in completely sheltered spaces, providing robust technical support for urban security surveillance. However, existing works have only focused on classifying different activities exhibited by the same individual, without exploring more refined topics such as personnel identification and threat identification, thus limiting its practical value. **This work is the first known effort to achieve simultaneous recognition of human identity and threat assessment in completely sheltered spaces using TWR.** We hope this will provide a groundbreaking, high-quality, and systematic research for our peers!
 
-**We fully trust our peer community and welcome the use of our open-source code for one-click verification, ensuring the reproducibility of the reported results in our paper.**
-\
-\
-![1](https://github.com/user-attachments/assets/474711ee-f0cf-4139-8bb6-52cd8f32a456)
-
-![2](https://github.com/user-attachments/assets/af4d5d0c-ccd4-4ef4-bcb2-e835d0dc0735)
-
 ### Basic Information:
 
 This repository is the open source code for my latest work: "MIMO Through-the-Wall Radar Identity-Threat Recognition via Multi-Channel Fusion and Riemannian Micro-Doppler Representation", submitted to IEEE IoT.
