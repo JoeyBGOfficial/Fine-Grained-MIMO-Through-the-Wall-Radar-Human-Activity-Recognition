@@ -14,7 +14,7 @@
 
 ## Write Sth. Upfront
 
-This repository provides the MATLAB implementation for **“Fine-Grained MIMO Through-the-Wall Radar Human Activity Recognition via Riemannian Micro-Doppler Representation”**, submitted to **IEEE TMTT**.
+This repository provides the MATLAB implementation for **“MIMO Through-the-Wall Radar Human Activity Recognition Based on Multichannel Riemannian Micro-Doppler Representation”**, submitted to **IEEE TMTT**.
 
 Through-the-wall radar (TWR) human activity recognition (HAR) focuses on extracting micro-Doppler signatures from indoor targets under penetration loss, low signal-to-noise ratio, low resolution, and multipath interference. Most existing TWR-HAR work focuses on activity classification for the same person. This project moves toward a finer-grained setting: **simultaneous human identity recognition and threat-state recognition** in fully sheltered spaces using MIMO TWR.
 
