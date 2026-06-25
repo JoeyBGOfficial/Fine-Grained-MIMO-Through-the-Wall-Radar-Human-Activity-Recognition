@@ -16,7 +16,7 @@
 
 This repository provides the MATLAB implementation for **“MIMO Through-the-Wall Radar Human Activity Recognition Based on Multichannel Riemannian Micro-Doppler Representation”**, submitted to **IEEE TMTT**.
 
-Through-the-wall radar (TWR) human activity recognition (HAR) focuses on extracting micro-Doppler signatures from indoor targets under penetration loss, low signal-to-noise ratio, low resolution, and multipath interference. Most existing TWR-HAR work focuses on activity classification for the same person. This project moves toward a finer-grained setting: **simultaneous human identity recognition and threat-state recognition** in fully sheltered spaces using MIMO TWR.
+Through-the-wall radar (TWR) human activity recognition (HAR) focuses on extracting micro-Doppler signatures from indoor targets under penetration loss, low signal-to-noise ratio, low resolution, and multipath interference. Most existing TWR-HAR work focuses on activity classification for the same person. This project moves toward a finer-grained setting, including **same-person activity recognition and same-action different-person armed/unarmed recognition** in fully sheltered spaces using MIMO TWR.
 
 The repository contains an end-to-end research pipeline, including human/radar echo simulation, real-world radar data processing, multi-channel radar image fusion, Riemannian feature representation, deep ensemble recognition, and benchmark method reproduction.
 
@@ -75,13 +75,13 @@ Identity + threat-state prediction
 
 ## Paper Information
 
-**Title:** MIMO Through-the-Wall Radar Identity-Threat Recognition via Multi-Channel Fusion and Riemannian Micro-Doppler Representation
+**Title:** MIMO Through-the-Wall Radar Human Activity Recognition Based on Multichannel Riemannian Micro-Doppler Representation
 
-**Abstract:** Prior information regarding friendly and hostile forces in urban warfare and counter-terrorism operations is provided by multiple-input multiple-output (MIMO) through-the-wall radar (TWR), achieving non-line-of-sight sensing of identity and threat. However, the distinctiveness of micro-Doppler signature between armed and unarmed walking human is minimized by the low signal-to-noise ratio, resolution, and limited training data of TWR, causing the recognition of existing methods ineffective. To address this issue, a MIMO TWR identity-threat recognition method based on multi-channel fusion and Riemannian micro-Doppler representation is proposed in this paper. The kinematics model for armed and unarmed human and TWR echo model are first established. Then, a fusion method based on entropy minimization and peak signal-to-noise ratio (PSNR) screening is proposed, alongside a fusion method based on trace ratio group sparse (TRGS) feature selection. The augmentation of multi-channel micro-Doppler signature is achieved. Next, a feature representation method based on Riemannian manifold geometry is proposed. The edge and detail information of micro-Doppler signature on radar images is enhanced. Finally, a neural network model based on multi-stream deep ensemble is proposed, and the integrated recognition of human identity and threat for TWR is achieved. Numerical simulations and experiments are conducted to verify the effectiveness of the proposed method, which demonstrates good accuracy under multiple individuals regardless of whether they are armed.
+**Abstract:** Through-the-wall radar (TWR) human activity recognition (HAR) is important for indoor security, emergency rescue, and other non-line-of-sight sensing tasks. However, in fine-grained through-the-wall recognition, wall penetration loss, multipath clutter, channel fading, and limited training data jointly weaken subtle micro-Doppler cues, while existing methods mostly rely on single-channel radar images or direct image fusion and therefore have difficulty preserving weak limb-motion and carried-object sidebands. To address this issue, in this paper, a multiple-input multiple-output (MIMO) TWR HAR method based on multichannel Riemannian micro-Doppler representation is proposed. First, articulated kinematic and echo models are established for two fine-grained tasks, including same-person activity recognition and same-action different-person armed/unarmed recognition. Range-time maps (RTMs), Doppler-time maps (DTMs), and range-Doppler maps (RDMs) are generated from all MIMO channels, and informative channels are screened and fused by peak signal-to-noise ratio (PSNR) and trace-ratio group-sparse (TRGS) criteria. Second, the fused radar images are mapped to a symmetric positive definite (SPD) matrix field, and a Riemannian tangent representation is constructed to encode local edge, curvature, and intensity covariance that are unstable in direct Euclidean image learning. Third, a multistream network integrates the augmented radar images and the Riemannian representation for recognition. Experiments on two measured TWR datasets acquired in the same scene show that the proposed method yields higher validation accuracy and stronger SNR robustness and sample robustness than the compared methods on both fine-grained tasks. The open-source code is available at https://github.com/JoeyBGOfficial/Fine-Grained-MIMO-Through-the-Wall-Radar-Human-Activity-Recognition.
 
 **Corresponding Papers:**
 
-[1] Upon reviewing.
+[1] Weicheng Gao, Xiaodong Qu, and Xiaopeng Yang, “MIMO Through-the-Wall Radar Human Activity Recognition Based on Multichannel Riemannian Micro-Doppler Representation,” submitted to IEEE Transactions on Microwave Theory and Techniques.
 
 ---
 
@@ -286,9 +286,3 @@ Each benchmark folder includes scripts for simulated data, measured data, datase
 2. **Algorithm design:** This work explores a fine-grained TWR recognition problem by combining multi-channel radar image fusion, Riemannian feature representation, and deep ensemble learning.
 3. **Data and rights:** Considering intellectual property and the effort of the team, this repository open-sources code and visualization results, but not the real-world raw radar data. The project is intended for learning and research reference only. Any direct use for paper submissions, patents, or commercialization must receive prior consent.
 4. **Questions:** For reproduction issues, feel free to contact me at **JoeyBG@126.com**.
-
----
-
-## License
-
-Please refer to the repository `LICENSE` file.
