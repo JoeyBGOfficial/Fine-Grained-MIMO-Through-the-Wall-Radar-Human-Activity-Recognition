@@ -1,6 +1,6 @@
 <img width="2172" height="373" alt="ChatGPT Image 2026年6月23日 15_09_42" src="https://github.com/user-attachments/assets/eb8ac69b-a9c6-4989-b298-f0defd5d38cb" />
 
-<h1 align="center">Fine-Grained MIMO Through-the-Wall Radar 12-Class Human Activity Recognition</h1>
+<h1 align="center">Fine-Grained MIMO Through-the-Wall Radar Human Activity Recognition</h1>
 
 <p align="center">
   <b>Multi-Channel Fusion · Riemannian Micro-Doppler Representation · Multi-Stream Deep Ensemble Recognition</b>
@@ -16,9 +16,9 @@
 
 This repository provides the MATLAB implementation for **“MIMO Through-the-Wall Radar Human Activity Recognition Based on Multichannel Riemannian Micro-Doppler Representation”**, submitted to **IEEE TMTT**.
 
-Through-the-wall radar (TWR) human activity recognition (HAR) focuses on extracting micro-Doppler signatures from indoor targets under penetration loss, low signal-to-noise ratio, low resolution, and multipath interference. Most existing TWR-HAR work focuses on coarse activity classes, single-map inputs, or limited channel usage. This project is centered on **fine-grained 12-class through-the-wall HAR** using MIMO radar, multichannel micro-Doppler augmentation, and Riemannian feature representation. A compact armed/unarmed walking task is retained only as a supplementary transferability check rather than as a co-equal objective.
+Through-the-wall radar (TWR) human activity recognition (HAR) focuses on extracting micro-Doppler signatures from indoor targets under penetration loss, low signal-to-noise ratio, low resolution, and multipath interference. Most existing TWR-HAR work focuses on activity classification for the same person. This project moves toward a finer-grained setting, including **same-person activity recognition and same-action different-person armed/unarmed recognition** in fully sheltered spaces using MIMO TWR.
 
-The repository contains an end-to-end research pipeline, including human/radar echo simulation, real-world radar data processing, multichannel radar image fusion, Riemannian feature representation, deep ensemble recognition, benchmark method reproduction, and public links for the image-form simulated and measured datasets used by the released workflow.
+The repository contains an end-to-end research pipeline, including human/radar echo simulation, real-world radar data processing, multi-channel radar image fusion, Riemannian feature representation, deep ensemble recognition, and benchmark method reproduction.
 
 ---
 
@@ -26,7 +26,7 @@ The repository contains an end-to-end research pipeline, including human/radar e
 
 | Module | Description |
 | --- | --- |
-| **MIMO TWR signal modeling** | Builds simulated and measured through-wall radar pipelines aligned with fine-grained HAR experiments. |
+| **MIMO TWR signal modeling** | Builds simulated through-wall radar echoes for walking humans with and without guns. |
 | **Multi-channel fusion** | Provides entropy-minimization + PSNR screening and Trace Ratio Group Sparse (TRGS) selection for channel-level enhancement. |
 | **Multi-domain radar images** | Generates RTM, DTM, and RDM representations for simulation and measured radar data. |
 | **Riemannian micro-Doppler representation** | Extracts SPD-manifold-based fine-grained features and assembles three-channel feature maps. |
@@ -68,9 +68,7 @@ Riemannian feature extraction on SPD manifold
         ↓
 Multi-stream deep ensemble recognition
         ↓
-12-class activity prediction
-        ↓
-Supplementary armed/unarmed transfer check
+Identity + threat-state prediction
 ```
 
 ---
@@ -79,7 +77,7 @@ Supplementary armed/unarmed transfer check
 
 **Title:** MIMO Through-the-Wall Radar Human Activity Recognition Based on Multichannel Riemannian Micro-Doppler Representation
 
-**Abstract:** Through-the-wall radar (TWR) human activity recognition (HAR) is important for indoor security, emergency rescue, and other non-line-of-sight sensing tasks. However, in fine-grained through-the-wall recognition, wall penetration loss, multipath clutter, channel fading, and limited training data jointly weaken subtle micro-Doppler cues, while existing methods mostly rely on single-channel radar images or direct image fusion and therefore have difficulty preserving weak limb-motion and transition sidebands. To address this issue, a multiple-input multiple-output (MIMO) TWR HAR method based on multichannel Riemannian micro-Doppler representation is proposed. Range-time maps (RTMs), Doppler-time maps (DTMs), and range-Doppler maps (RDMs) are generated from all MIMO channels, and informative channels are screened and fused by peak signal-to-noise ratio (PSNR) and trace-ratio group-sparse (TRGS) criteria. The fused radar images are then mapped to a symmetric positive definite (SPD) matrix field, and a Riemannian tangent representation is constructed to encode local edge, curvature, and intensity covariance that are unstable in direct Euclidean image learning. Finally, a multistream network integrates the augmented radar images and the Riemannian representation for **fine-grained 12-class through-the-wall HAR**. Compact supplementary armed/unarmed results are retained only as a transferability check. The repository also includes public links, installation notes, required toolboxes, and the script order needed to reproduce the released results.
+**Abstract:** Through-the-wall radar (TWR) human activity recognition (HAR) is important for indoor security, emergency rescue, and other non-line-of-sight sensing tasks. However, in fine-grained through-the-wall recognition, wall penetration loss, multipath clutter, channel fading, and limited training data jointly weaken subtle micro-Doppler cues, while existing methods mostly rely on single-channel radar images or direct image fusion and therefore have difficulty preserving weak limb-motion and carried-object sidebands. To address this issue, in this paper, a multiple-input multiple-output (MIMO) TWR HAR method based on multichannel Riemannian micro-Doppler representation is proposed. First, articulated kinematic and echo models are established for two fine-grained tasks, including same-person activity recognition and same-action different-person armed/unarmed recognition. Range-time maps (RTMs), Doppler-time maps (DTMs), and range-Doppler maps (RDMs) are generated from all MIMO channels, and informative channels are screened and fused by peak signal-to-noise ratio (PSNR) and trace-ratio group-sparse (TRGS) criteria. Second, the fused radar images are mapped to a symmetric positive definite (SPD) matrix field, and a Riemannian tangent representation is constructed to encode local edge, curvature, and intensity covariance that are unstable in direct Euclidean image learning. Third, a multistream network integrates the augmented radar images and the Riemannian representation for recognition. Experiments on two measured TWR datasets acquired in the same scene show that the proposed method yields higher validation accuracy and stronger SNR robustness and sample robustness than the compared methods on both fine-grained tasks.
 
 **Corresponding Papers:**
 
@@ -182,8 +180,6 @@ Download the image-based dataset from:
 ```text
 https://drive.google.com/file/d/11STB1Kyb1r5GYCp3O-R3QM9s9NHmCci1/view?usp=sharing
 ```
-
-This public package is the image-form measured dataset used by the released recognition workflow. The manuscript's main benchmark is the **single-subject, single-scene 12-class activity dataset**, while the armed/unarmed data are used only for a compact supplementary transferability check.
 
 Unzip `RW_Set.rar` into the current `RW_Set` folder. The following folders should then appear under `RW_Set`:
 
