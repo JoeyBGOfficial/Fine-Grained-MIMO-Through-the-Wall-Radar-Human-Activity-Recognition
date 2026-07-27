@@ -2,7 +2,7 @@
 
 Fig. Confusion matrices of the proposed method as well as the existing methods on the supplementary armed dataset.
 
-\
+/
 
 <img width="9519" height="6551" alt="Armed_TSNE" src="https://github.com/user-attachments/assets/aae91e39-a3dc-4e16-a868-c11926ddd49c" />
 
