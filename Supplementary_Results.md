@@ -8,6 +8,7 @@ Fig. Confusion matrices of the proposed method as well as the existing methods o
 
 Fig.  t-SNE visualization of different methods on the supplementary armed dataset. All t-SNE coordinates are normalized to [-1,1].
 
+<br>
 
 <img width="3074" height="859" alt="屏幕截图 2026-07-27 113800" src="https://github.com/user-attachments/assets/625b9579-67ef-4aee-831d-2d9b94e48565" />
 
