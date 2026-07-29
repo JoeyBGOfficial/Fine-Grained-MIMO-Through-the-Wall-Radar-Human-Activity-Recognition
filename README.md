@@ -1,6 +1,6 @@
 <img width="2172" height="373" alt="ChatGPT Image 2026年6月23日 15_09_42" src="https://github.com/user-attachments/assets/eb8ac69b-a9c6-4989-b298-f0defd5d38cb" />
 
-<h1 align="center">Fine-Grained MIMO Through-the-Wall Radar Human Activity Recognition</h1>
+<h1 align="center">MIMO Through-the-Wall Radar Human Activity Recognition</h1>
 
 <p align="center">
   <b>Multi-Channel Fusion · Riemannian Micro-Doppler Representation · Multi-Stream Deep Ensemble Recognition</b>
@@ -14,7 +14,7 @@
 
 ## Write Sth. Upfront
 
-This repository provides the MATLAB implementation for **“MIMO Through-the-Wall Radar Human Activity Recognition Based on Multichannel Riemannian Micro-Doppler Representation”**, submitted to **IEEE TMTT**.
+This repository provides the MATLAB implementation for **“Utilizing Complementary Multichannel Micro-Doppler Signatures for Through-the-Wall Radar Human Activity Recognition”**, submitted to **IEEE TMTT**.
 
 Through-the-wall radar (TWR) human activity recognition (HAR) focuses on extracting micro-Doppler signatures from indoor targets under penetration loss, low signal-to-noise ratio, low resolution, and multipath interference. Most existing TWR-HAR work focuses on activity classification for the same person. This project moves toward a finer-grained setting, including **same-person activity recognition and same-action different-person armed/unarmed recognition** in fully sheltered spaces using MIMO TWR.
 
