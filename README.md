@@ -14,7 +14,7 @@
 
 ## Write Sth. Upfront
 
-This repository provides the MATLAB implementation for **“Utilizing Complementary Multichannel Micro-Doppler Signatures for Through-the-Wall Radar Human Activity Recognition”**, submitted to **IEEE TMTT**.
+This repository provides the MATLAB implementation for **“Riemannian Multichannel Representation Learning for MIMO Through-the-Wall Radar Human Activity Recognition”**, submitted to **IEEE TMM**.
 
 Through-the-wall radar (TWR) human activity recognition (HAR) focuses on extracting micro-Doppler signatures from indoor targets under penetration loss, low signal-to-noise ratio, low resolution, and multipath interference. Most existing TWR-HAR work focuses on activity classification for the same person. This project moves toward a finer-grained setting, including **same-person activity recognition and same-action different-person armed/unarmed recognition** in fully sheltered spaces using MIMO TWR.
 
@@ -75,13 +75,13 @@ Identity + threat-state prediction
 
 ## Paper Information
 
-**Title:** MIMO Through-the-Wall Radar Human Activity Recognition Based on Multichannel Riemannian Micro-Doppler Representation
+**Title:** Riemannian Multichannel Representation Learning for MIMO Through-the-Wall Radar Human Activity Recognition
 
-**Abstract:** Through-the-wall radar (TWR) human activity recognition (HAR) is important for indoor security, emergency rescue, and other non-line-of-sight sensing tasks. However, in fine-grained through-the-wall recognition, wall penetration loss, multipath clutter, channel fading, and limited training data jointly weaken subtle micro-Doppler cues, while existing methods mostly rely on single-channel radar images or direct image fusion and therefore have difficulty preserving weak limb-motion and carried-object sidebands. To address this issue, in this paper, a multiple-input multiple-output (MIMO) TWR HAR method based on multichannel Riemannian micro-Doppler representation is proposed. First, articulated kinematic and echo models are established for two fine-grained tasks, including same-person activity recognition and same-action different-person armed/unarmed recognition. Range-time maps (RTMs), Doppler-time maps (DTMs), and range-Doppler maps (RDMs) are generated from all MIMO channels, and informative channels are screened and fused by peak signal-to-noise ratio (PSNR) and trace-ratio group-sparse (TRGS) criteria. Second, the fused radar images are mapped to a symmetric positive definite (SPD) matrix field, and a Riemannian tangent representation is constructed to encode local edge, curvature, and intensity covariance that are unstable in direct Euclidean image learning. Third, a multistream network integrates the augmented radar images and the Riemannian representation for recognition. Experiments on two measured TWR datasets acquired in the same scene show that the proposed method yields higher validation accuracy and stronger SNR robustness and sample robustness than the compared methods on both fine-grained tasks.
+**Abstract:** Through-the-wall radar (TWR) human activity recognition (HAR) remains difficult because wall attenuation, channel fading, and limited training data weaken the inter-class separability of micro-Doppler signatures. To address this issue, a multiple-input multiple-output (MIMO) TWR HAR method utilizing complementary Riemannian multichannel micro-Doppler signatures is proposed. Range-time maps (RTMs), Doppler-time maps (DTMs), and range-Doppler maps (RDMs) are first generated from all virtual channels, after which peak signal-to-noise ratio (PSNR)- and trace-ratio group-sparse (TRGS)-based screening is used to retain high-quality and class-discriminative channels before wavelet-domain fusion. The fused maps are then converted into local symmetric positive definite (SPD) covariance fields, projected onto a Riemannian tangent space, and reconstructed as image-form feature maps. Finally, the augmented RTM/DTM/RDM observations and the Riemannian feature maps are recognized by a multistream soft-voting module. Experiments on measured datasets acquired by a self-developed time-division-multiplexed MIMO TWR platform cover multiple activities and wall conditions, and the results consistently support the effectiveness of the proposed method.
 
 **Corresponding Papers:**
 
-[1] Weicheng Gao, Xiaodong Qu, and Xiaopeng Yang, “Utilizing Complementary Multichannel Micro-Doppler Signatures for Through-the-Wall Radar Human Activity Recognition,” submitted to IEEE Transactions on Multimedia.
+[1] Weicheng Gao, Xiaodong Qu, and Xiaopeng Yang, “Riemannian Multichannel Representation Learning for MIMO Through-the-Wall Radar Human Activity Recognition,” submitted to IEEE Transactions on Multimedia.
 
 ---
 
