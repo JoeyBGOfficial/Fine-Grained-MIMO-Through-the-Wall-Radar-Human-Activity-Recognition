@@ -81,7 +81,7 @@ Identity + threat-state prediction
 
 **Corresponding Papers:**
 
-[1] Weicheng Gao, Xiaodong Qu, and Xiaopeng Yang, “Utilizing Complementary Multichannel Micro-Doppler Signatures for Through-the-Wall Radar Human Activity Recognition,” submitted to IEEE Transactions on Microwave Theory and Techniques.
+[1] Weicheng Gao, Xiaodong Qu, and Xiaopeng Yang, “Utilizing Complementary Multichannel Micro-Doppler Signatures for Through-the-Wall Radar Human Activity Recognition,” submitted to IEEE Transactions on Multimedia.
 
 ---
 
